@@ -5,6 +5,7 @@ export default class nguoi_dung extends Model {
   static init(sequelize, DataTypes) {
   return super.init({
     nguoi_dung_id: {
+      autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true

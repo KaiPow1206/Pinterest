@@ -5,6 +5,7 @@ export default class binh_luan extends Model {
   static init(sequelize, DataTypes) {
   return super.init({
     binh_luan_id: {
+      autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true

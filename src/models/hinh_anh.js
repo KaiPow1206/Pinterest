@@ -5,6 +5,7 @@ export default class hinh_anh extends Model {
   static init(sequelize, DataTypes) {
   return super.init({
     hinh_id: {
+      autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true

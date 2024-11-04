@@ -1,9 +1,9 @@
 import express from 'express';
-import testRoutes from './test.router.js';
+import authRoutes from './auth.router.js';
 
 
 const rootRoutes = express.Router();
-rootRoutes.use("/test",testRoutes);
+rootRoutes.use("/auth",authRoutes);
 
 
 export default rootRoutes;
