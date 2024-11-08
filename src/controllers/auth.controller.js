@@ -1,7 +1,7 @@
 import sequelize from "../models/connect.js";
 import initModels from "../models/init-models.js";
 import bcrypt from 'bcrypt';
-import { BAD_REQUEST, CREATED, INTERNAL_SERVER } from "../../status.js";
+import { BAD_REQUEST, CREATED, INTERNAL_SERVER, OK } from "../../status.js";
 import { createToken } from "../config/jwt.js";
 
 
@@ -46,13 +46,13 @@ const loginUser = async (req,res) => {
    }
    let checkPass = bcrypt.compareSync(mat_khau,user.mat_khau);
    if (!checkPass){
-      return res.status(400).json({message:"Passwword is wrong"});
+      return res.status(BAD_REQUEST).json({message:"Passwword is wrong"});
    }
    let payload={
       userId:user.nguoi_dung_id
    }
    let accessToken = createToken({userId:user.nguoi_dung_id});
-   return res.status(200).json({
+   return res.status(OK).json({
       message:"Login Successfully",
       data: accessToken,
    });
