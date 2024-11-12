@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "b95f4614-7142-4492-8743-992f3f9648b8",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37937032"
+	},
+	"item": [
+		{
+			"name": "API GET USER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTA3NCwiZXhwIjoxNzMxNDE5Njc0fQ.8Yq2UQlveMObQ8LoXnJZRBpbHR_cRbBCPoPX_W8c6UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/details/get-info-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"get-info-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API GEST LIST PICTURE CREATED",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTA3NCwiZXhwIjoxNzMxNDE5Njc0fQ.8Yq2UQlveMObQ8LoXnJZRBpbHR_cRbBCPoPX_W8c6UU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/details/get-list-picture-created-by-userid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"get-list-picture-created-by-userid",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API CREATE COMMENT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTA3NCwiZXhwIjoxNzMxNDE5Njc0fQ.8Yq2UQlveMObQ8LoXnJZRBpbHR_cRbBCPoPX_W8c6UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nguoi_dung_id\":\"1\",\r\n    \"hinh_id\":\"5\",\r\n    \"noi_dung\":\"hahahah\",\r\n    \"ngay_binh_luan\":\"2024-1-1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/details/create-comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"create-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API CREATE PICTURE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTA3NCwiZXhwIjoxNzMxNDE5Njc0fQ.8Yq2UQlveMObQ8LoXnJZRBpbHR_cRbBCPoPX_W8c6UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nguoi_dung_id\":\"1\",\r\n    \"ten_hinh\":\"khong co\",\r\n    \"duong_dan\":\"nah\",\r\n    \"mo_ta\":\"hsadhasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/details/create-picture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"create-picture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API DELETE PICTURE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTcwNSwiZXhwIjoxNzMxNDIwMzA1fQ.0EXNsm_A28OXDefN_mVTlgGvemnhB8TmPllDYoAoPfM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/details/delete-picture-by-pictureid/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"delete-picture-by-pictureid",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTcwNSwiZXhwIjoxNzMxNDIwMzA1fQ.0EXNsm_A28OXDefN_mVTlgGvemnhB8TmPllDYoAoPfM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"nguyenvovanio44@gmail.com\",\r\n    \"mat_khau\":\"123\",\r\n    \"ho_ten\":\"vovanvvv\",\r\n    \"tuoi\":\"18\",\r\n    \"anh_dai_dien\":\"none\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/details/update-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"update-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API GET LIST PICTURE SAVED",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MX0sImlhdCI6MTczMTQxOTcwNSwiZXhwIjoxNzMxNDIwMzA1fQ.0EXNsm_A28OXDefN_mVTlgGvemnhB8TmPllDYoAoPfM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/details/get-list-picture-saved-by-userid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"get-list-picture-saved-by-userid",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
